@@ -1,0 +1,69 @@
+/**
+ * file: style.css
+ * purpose: effects ...
+ **/
+
+body {
+    background-color: lightblue;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+article {
+    width: 26rem;
+}
+
+img {
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.velkommen {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15px;
+}
+
+#first {
+    width: 10rem;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        color: yellow;
+    }
+    25% {
+        background-color: yellow;
+        color: blue;
+    }
+    50% {
+        background-color: blue;
+        color: green;
+    }
+    100% {
+        background-color: green;
+        color: red;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
